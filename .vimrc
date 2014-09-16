@@ -1,6 +1,5 @@
 " Use the Solarized Dark theme
-set background=dark
-colorscheme solarized
+colorscheme default 
 
 " Make Vim more useful
 set nocompatible
@@ -46,7 +45,9 @@ syntax on
 " Highlight current line
 set cursorline
 " Make tabs as wide as two spaces
-set tabstop=2
+set tabstop=4
+set expandtab
+set shiftwidth=4
 " Show “invisible” characters
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set list
@@ -98,8 +99,12 @@ noremap <leader>W :w !sudo tee % > /dev/null<CR>
 if has("autocmd")
 	" Enable file type detection
 	filetype on
+	filetype plugin indent on
 	" Treat .json files as .js
 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 	" Treat .md files as Markdown
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
+
+source $VIMRUNTIME/macros/matchit.vim
+
