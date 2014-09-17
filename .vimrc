@@ -108,3 +108,10 @@ endif
 
 source $VIMRUNTIME/macros/matchit.vim
 
+execute pathogen#infect()
+
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
