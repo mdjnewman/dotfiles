@@ -142,3 +142,7 @@ alias reload="exec $SHELL -l"
 
 # Faster npm for Europeans
 command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu/"
+
+# Print processes listening on OS X
+alias listening="lsof -nP -iTCP -sTCP:LISTEN"
+
