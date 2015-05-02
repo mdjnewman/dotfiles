@@ -52,6 +52,7 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 export LC_ALL=en_GB.UTF-8
 export LANG=en_GB.UTF-8
 
+
 # http://www.jayway.com/2014/01/15/how-to-switch-jdk-version-on-mac-os-x-maverick/
 function setjdk() {
   if [ $# -ne 0 ]; then
@@ -66,7 +67,3 @@ function setjdk() {
 function removeFromPath() {
   export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")
 }
-
-# http://askubuntu.com/questions/25605/how-can-i-get-tab-completion-in-the-interactive-python-interpreter
-export PYTHONSTARTUP="${HOME}/.pythonstartup.py"
-
