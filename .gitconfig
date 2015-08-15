@@ -178,4 +178,9 @@
 
 [credential]
 
-	helper = osxkeychain
+    helper = osxkeychain
+
+[user]
+    name = Matt Newman
+    email = mdjnewman@gmail.com
+
