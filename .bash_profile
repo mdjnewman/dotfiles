@@ -68,5 +68,3 @@ function removeFromPath() {
   export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")
 }
 
-$(/usr/local/bin/boot2docker shellinit > /dev/null 2>&1)
-
