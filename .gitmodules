@@ -1,0 +1,9 @@
+[submodule ".vim/bundle/ghcmod-vim"]
+	path = .vim/bundle/ghcmod-vim
+	url = https://github.com/eagletmt/ghcmod-vim
+[submodule ".vim/bundle/syntastic"]
+	path = .vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic
+[submodule ".vim/bundle/vimproc.vim"]
+	path = .vim/bundle/vimproc.vim
+	url = https://github.com/Shougo/vimproc.vim

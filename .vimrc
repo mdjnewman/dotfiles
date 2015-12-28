@@ -117,3 +117,4 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
+autocmd BufWritePost *.hs GhcModCheckAndLintAsync
