@@ -108,6 +108,33 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
 
+" Delete trailing white space on save
+func! DeleteTrailingWS()
+  exe "normal mz"
+  %s/\s\+$//ge
+  exe "normal `z"
+endfunc
+
+augroup whitespace
+  autocmd!
+  autocmd BufWrite *.hs :call DeleteTrailingWS()
+augroup END
+
+" Haskell config
+
+augroup haskell
+  autocmd BufWritePost *.hs GhcModCheckAndLintAsync
+augroup END
+
+" Type of expression under cursor
+nmap <silent> <leader>ht :GhcModType<CR>
+" Insert type of expression under cursor
+nmap <silent> <leader>hT :GhcModTypeInsert<CR>
+" GHC errors and warnings
+nmap <silent> <leader>hc :SyntasticCheck hdevtools<CR>
+
+
+
 source $VIMRUNTIME/macros/matchit.vim
 
 execute pathogen#infect()
@@ -117,4 +144,3 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
-autocmd BufWritePost *.hs GhcModCheckAndLintAsync
