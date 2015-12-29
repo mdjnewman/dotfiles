@@ -123,7 +123,9 @@ augroup END
 " Haskell config
 
 augroup haskell
+  autocmd!
   autocmd BufWritePost *.hs GhcModCheckAndLintAsync
+  autocmd FileType haskell map <silent> <leader><cr> :noh<cr>:GhcModTypeClear<cr>:SyntasticReset<cr>
 augroup END
 
 " Type of expression under cursor
