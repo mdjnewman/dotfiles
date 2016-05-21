@@ -52,6 +52,8 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 export LC_ALL=en_GB.UTF-8
 export LANG=en_GB.UTF-8
 
+# added by travis gem
+[ -f /Users/mnewman/.travis/travis.sh ] && source /Users/mnewman/.travis/travis.sh
 
 # http://www.jayway.com/2014/01/15/how-to-switch-jdk-version-on-mac-os-x-maverick/
 function setjdk() {
