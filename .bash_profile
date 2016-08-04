@@ -93,3 +93,5 @@ if [ -f "${SSH_ENV}" ]; then
 else
     start_agent;
 fi
+
+complete -C aws_completer aws
