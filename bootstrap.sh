@@ -25,3 +25,5 @@ else
 	fi;
 fi;
 unset doIt;
+
+mkdir -p ~/.vim/backups
