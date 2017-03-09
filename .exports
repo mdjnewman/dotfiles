@@ -28,3 +28,9 @@ export LESS_TERMCAP_md="${yellow}";
 
 # Don’t clear the screen after quitting a manual page.
 export MANPAGER='less -X';
+
+# Android tools home
+ANDROID_HOME=/usr/local/opt/android-sdk
+if [ -d "$ANDROID_HOME" ]; then
+    export ANDROID_HOME=$ANDROID_HOME;
+fi
