@@ -93,12 +93,8 @@ fi
 
 complete -C aws_completer aws
 
-eval "if [ -f "$HOME/perl5" ]; then perl -I$HOME/perl5/lib/perl5 -Mlocal::lib; fi"
+[ -d "$HOME/perl5" ] && eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
-# added by travis gem
-[ -f /Users/mnewman/.travis/travis.sh ] && source /Users/mnewman/.travis/travis.sh
-
-[[ -s "/usr/local/opt/nvm/nvm.sh" ]] && source "/usr/local/opt/nvm/nvm.sh"
-
+[ -f "$HOME/.rvm/scripts/rvm"    ] && source "$HOME/.rvm/scripts/rvm"
+[ -f "$HOME/.travis/travis.sh"   ] && source "$HOME/.travis/travis.sh"
+[ -f "/usr/local/opt/nvm/nvm.sh" ] && source "/usr/local/opt/nvm/nvm.sh"
