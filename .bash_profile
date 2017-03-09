@@ -49,9 +49,6 @@ complete -W "NSGlobalDomain" defaults;
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
-export LC_ALL=en_GB.UTF-8
-export LANG=en_GB.UTF-8
-
 # added by travis gem
 [ -f /Users/mnewman/.travis/travis.sh ] && source /Users/mnewman/.travis/travis.sh
 
