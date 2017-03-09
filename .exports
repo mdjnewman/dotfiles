@@ -34,3 +34,6 @@ ANDROID_HOME=/usr/local/opt/android-sdk
 if [ -d "$ANDROID_HOME" ]; then
     export ANDROID_HOME=$ANDROID_HOME;
 fi
+
+# nvm home
+export NVM_DIR="$HOME/.nvm"

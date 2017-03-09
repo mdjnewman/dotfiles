@@ -49,9 +49,6 @@ complete -W "NSGlobalDomain" defaults;
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
-# added by travis gem
-[ -f /Users/mnewman/.travis/travis.sh ] && source /Users/mnewman/.travis/travis.sh
-
 # http://www.jayway.com/2014/01/15/how-to-switch-jdk-version-on-mac-os-x-maverick/
 function setjdk() {
   if [ $# -ne 0 ]; then
@@ -67,6 +64,7 @@ function removeFromPath() {
   export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")
 }
 
+# SSH settings
 # http://stackoverflow.com/a/18915067
 SSH_ENV="$HOME/.ssh/environment"
 
@@ -79,8 +77,6 @@ function start_agent {
     # /usr/bin/ssh-add;
 }
 
-# Source SSH settings, if applicable
-
 if [ -f "${SSH_ENV}" ]; then
     . "${SSH_ENV}" > /dev/null
     #ps ${SSH_AGENT_PID} doesn't work under cywgin
@@ -91,13 +87,18 @@ else
     start_agent;
 fi
 
+#
+# Other
+#
+
 complete -C aws_completer aws
 
 eval "if [ -f "$HOME/perl5" ]; then perl -I$HOME/perl5/lib/perl5 -Mlocal::lib; fi"
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
-function set_docker_host_ip {
-    export DOCKER_HOST_IP="$(ifconfig en0 | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1')"
-}
+# added by travis gem
+[ -f /Users/mnewman/.travis/travis.sh ] && source /Users/mnewman/.travis/travis.sh
+
+[[ -s "/usr/local/opt/nvm/nvm.sh" ]] && source "/usr/local/opt/nvm/nvm.sh"
 
