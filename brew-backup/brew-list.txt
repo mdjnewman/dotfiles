@@ -1,8 +1,8 @@
 ack
-adr_tools
 aircrack-ng
-android-platform-tools
+android-sdk
 ansible
+apktool
 apr
 apr-util
 autoconf
@@ -10,6 +10,7 @@ automake
 awscli
 bash
 bash-completion2
+bash-completion@2
 bfg
 binutils
 binwalk
@@ -24,6 +25,7 @@ cloog
 cloog018
 cmake
 cmark
+cocoapods
 colordiff
 coreutils
 ctags
@@ -91,6 +93,7 @@ libpng
 libtasn1
 libtiff
 libtool
+libunistring
 libxml2
 libyaml
 little-cms2
@@ -99,6 +102,7 @@ lynx
 make
 maven
 mdbtools
+mongodb
 moreutils
 mpfr
 mpfr2
@@ -149,6 +153,7 @@ sdl
 sdl2
 sfnt2woff
 sfnt2woff-zopfli
+shellcheck
 shiboken
 smartmontools
 socat
@@ -171,6 +176,7 @@ ucspi-tcp
 unixodbc
 utf8proc
 vim
+watchman
 wdiff
 webkit2png
 webp
@@ -179,5 +185,6 @@ wireshark
 woff2
 wxmac
 xz
+yarn
 zlib
 zopfli

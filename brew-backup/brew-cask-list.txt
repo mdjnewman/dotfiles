@@ -1,5 +1,8 @@
+android-studio
 caffeine
 evernote
+fastlane
+filezilla
 firefox
 flux
 gnucash
@@ -10,6 +13,7 @@ libreoffice
 rstudio
 shiftit
 squirrelsql
+transmission
 transmission-remote-gui
 vagrant
 virtualbox
