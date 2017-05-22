@@ -30,7 +30,7 @@ export LESS_TERMCAP_md="${yellow}";
 export MANPAGER='less -X';
 
 # Android tools home
-ANDROID_HOME=/usr/local/opt/android-sdk
+ANDROID_HOME=/usr/local/share/android-sdk
 if [ -d "$ANDROID_HOME" ]; then
     export ANDROID_HOME=$ANDROID_HOME;
 fi
