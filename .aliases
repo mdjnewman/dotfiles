@@ -171,5 +171,3 @@ alias listening="lsof -nP -iTCP -sTCP:LISTEN"
 
 alias intellij="open -a 'IntelliJ IDEA CE'"
 alias webstorm="open -a Webstorm"
-
-alias dps="docker ps --format 'table {{.ID}}\t{{.Command}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}' -a"
