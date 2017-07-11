@@ -1,3 +1,4 @@
+android-sdk
 android-studio
 caffeine
 evernote
@@ -9,6 +10,7 @@ gnucash
 intellij-idea-ce
 istumbler
 java
+keepassx
 libreoffice
 rstudio
 shiftit
