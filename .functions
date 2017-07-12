@@ -235,9 +235,19 @@ if command -v docker > /dev/null; then
 		fi
 	}
 	function dshi() {
-        export DOCKER_HOST_IP="$(ifconfig en0 | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1')"
+		export DOCKER_HOST_IP="$(ifconfig en0 | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1')"
 	}
 	function dps() {
 		docker ps --format 'table {{.ID}}\t{{.Command}}\t{{.Names}}\t{{.Status}}\t{{.Ports}}' -a
 	}
 fi
+
+#
+# Lazy load nvm
+#
+function nvm() {
+	unset nvm
+	[ -f "/usr/local/opt/nvm/nvm.sh" ] && source "/usr/local/opt/nvm/nvm.sh"
+	nvm "$@"
+}
+

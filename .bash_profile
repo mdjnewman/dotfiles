@@ -98,4 +98,3 @@ complete -C aws_completer aws
 
 [ -f "$HOME/.rvm/scripts/rvm"    ] && source "$HOME/.rvm/scripts/rvm"
 [ -f "$HOME/.travis/travis.sh"   ] && source "$HOME/.travis/travis.sh"
-[ -f "/usr/local/opt/nvm/nvm.sh" ] && source "/usr/local/opt/nvm/nvm.sh"
