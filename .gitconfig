@@ -131,7 +131,7 @@
 [commit]
 
 	# https://help.github.com/articles/signing-commits-using-gpg/
-    # gpgsign = true
+	# gpgsign = true
 
 [diff]
 
@@ -194,13 +194,14 @@
 
 [credential]
 
-    helper = osxkeychain
+	helper = osxkeychain
 
 [user]
     name = Matt Newman
     email = mdjnewman@gmail.com
 
 [filter "lfs"]
+
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
