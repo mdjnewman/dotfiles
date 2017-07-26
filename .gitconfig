@@ -197,8 +197,9 @@
 	helper = osxkeychain
 
 [user]
-    name = Matt Newman
-    email = mdjnewman@gmail.com
+
+	name = Matt Newman
+	email = mdjnewman@gmail.com
 
 [filter "lfs"]
 
