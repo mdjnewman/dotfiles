@@ -156,3 +156,12 @@ noremap <Right> <NOP>
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_javascript_checkers = ["eslint"]
+
+" https://github.com/tpope/vim-markdown/issues/60
+autocmd FileType markdown silent! |
+      \hi def link markdownItalic              NONE |
+      \hi def link markdownItalicDelimiter     NONE |
+      \hi def link markdownBold                NONE |
+      \hi def link markdownBoldDelimiter       NONE |
+      \hi def link markdownBoldItalic          NONE |
+      \hi def link markdownBoldItalicDelimiter NONE
