@@ -1,4 +1,7 @@
-#!/usr/bin/env bash
+#!/usr/local/bin/bash
+
+# Not strictly, but my .bash_profile does require it
+if ((BASH_VERSINFO[0] < 4)); then echo "Sorry, you need at least bash-4.0 to run this script." >&2; exit 1; fi
 
 . /Users/mnewman/.bash_profile > /dev/null
 
