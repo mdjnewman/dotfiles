@@ -9,7 +9,7 @@ cd ~ || exit
 
 OUT="$(tar --create \
     --gzip \
-    --file "./Dropbox/Backups/GnuCash Preferences/$(gdate -Iseconds).tar.gz" \
+    --file "./Dropbox/Backups/GnuCash Preferences/$(gdate --universal --iso-8601=seconds).tar.gz" \
     './Library/Preferences/org.gnucash.Gnucash.plist' \
     './Library/Application Support/Gnucash/' \
     '.aqbanking/' \
