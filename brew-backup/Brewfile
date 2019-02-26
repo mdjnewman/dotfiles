@@ -1,6 +1,5 @@
 tap "cloudfoundry/tap"
 tap "gbeine/java"
-tap "homebrew/boneyard"
 tap "homebrew/bundle"
 tap "homebrew/cask", "https://github.com/caskroom/homebrew-cask"
 tap "homebrew/cask-drivers", "https://github.com/caskroom/homebrew-drivers"
