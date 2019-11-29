@@ -95,7 +95,8 @@ fi
 
 complete -C aws_completer aws
 
-[ -d "$HOME/perl5" ] && eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
+[ -d "$HOME/perl5" ] && eval "$(perl -I"$HOME/perl5/lib/perl5" -Mlocal::lib="$HOME/perl5")"
+export PATH="/usr/local/opt/perl@5.18/bin:$PATH"
 
 # [ -f "$HOME/.rvm/scripts/rvm"    ] && source "$HOME/.rvm/scripts/rvm"
 [ -f "$HOME/.travis/travis.sh"   ] && source "$HOME/.travis/travis.sh"
