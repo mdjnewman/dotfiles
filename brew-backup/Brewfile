@@ -13,7 +13,7 @@ tap "shyiko/ktlint"
 tap "vitorgalvao/tiny-scripts"
 brew "ack"
 brew "python"
-brew "ansible", link: false
+brew "ansible"
 brew "apktool"
 brew "apr-util"
 brew "autoconf"
