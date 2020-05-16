@@ -9,8 +9,8 @@ cd ~ || exit
 OUT="$(tar --create \
     --gzip \
     --file "./Dropbox/Backups/Edge/$(gdate --universal --iso-8601=seconds | sed -e 's/\://g').tar.gz" \
-    '/Volumes/GARMIN/Garmin/Courses' \
     '/Volumes/GARMIN/Garmin/Locations' \
+    '/Volumes/GARMIN/Garmin/Metrics' \
     '/Volumes/GARMIN/Garmin/Records' \
     '/Volumes/GARMIN/Garmin/Settings' \
     '/Volumes/GARMIN/Garmin/Sports' \
