@@ -102,8 +102,6 @@ if has("autocmd")
 	" Enable file type detection
 	filetype on
 	filetype plugin indent on
-	" Treat .json files as .js
-	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 	" Treat .md files as Markdown
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
@@ -154,8 +152,6 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_javascript_checkers = ["eslint"]
 
 " https://github.com/tpope/vim-markdown/issues/60
 autocmd FileType markdown silent! |
