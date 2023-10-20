@@ -8,7 +8,6 @@ function doIt() {
 	rsync \
 		--exclude ".DS_Store" \
 		--exclude ".git/" \
-		--exclude ".gitignore" \
 		--exclude ".gitmodules" \
 		--exclude ".osx" \
 		--exclude "LICENSE-MIT.txt" \
