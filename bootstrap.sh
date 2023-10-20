@@ -9,6 +9,7 @@ function doIt() {
 		--exclude ".DS_Store" \
 		--exclude ".osx" \
 		--exclude "init" \
+		--exclude "diff-existing.sh" \
 		--exclude "bootstrap.sh" \
 		--exclude "brew-backup" \
 		--exclude "README.md" \
