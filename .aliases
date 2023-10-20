@@ -153,5 +153,3 @@ command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.e
 # Print processes listening on OS X
 alias listening="lsof -nP -iTCP -sTCP:LISTEN"
 
-alias intellij="open -a 'IntelliJ IDEA CE'"
-alias webstorm="open -a Webstorm"
